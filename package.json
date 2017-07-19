@@ -1,0 +1,28 @@
+{
+  "name": "one_page_jquery_site",
+  "version": "1.0.0",
+  "description": "a one page jquery site for a ficticious non-profit Regrow Detroit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauletteV/Jquery_one_page_site.git"
+  },
+  "author": "Paulette Vallad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauletteV/Jquery_one_page_site/issues"
+  },
+  "homepage": "https://github.com/pauletteV/Jquery_one_page_site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-minify": "0.0.15",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  }
+}

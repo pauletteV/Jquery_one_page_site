@@ -7,3 +7,6 @@ ehthumbs.db
 Thumbs.db
 .DS_STORE
 artwork
+node_modules
+readMe.txt
+notes.txt

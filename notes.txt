@@ -1,0 +1,24 @@
+
+* hover over the image & change to new imge
+
+* have an animation onload that fades up each section one after another????
+
+* for mobile: have the logo on the left (in the header) & use the hamburger menu  (font awesome) for the 4 nav
+
+* pull in the information about each building via a JSON object; this includes the main image (use http://api.jquery.com/jQuery.getJSON/)
+
+* use gulp:
+	- /* DON'T NEED... going to use CSS grid */ concatenate the responsive grid system .css files & main styles into one final file. (https://github.com/mariocasciaro/gulp-concat-css)
+	- use gulp-if and/or use the NODE_ENV to build based on production & dev enviroment
+	- minify the JSON file with gulp jsonminify
+
+* use CSS grid vs. a framework (https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+should I have a slider at the top?????
+
+******DESIGN STUFF*****
+	* need a seamless pattern for the footer
+	* need to create the logo
+	* need color scheme
+	* need to select images; process the "new images"
+	* use SVG for icons/nav icons
