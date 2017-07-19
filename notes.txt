@@ -8,9 +8,8 @@
 * pull in the information about each building via a JSON object; this includes the main image (use http://api.jquery.com/jQuery.getJSON/)
 
 * use gulp:
-	- /* DON'T NEED... going to use CSS grid */ concatenate the responsive grid system .css files & main styles into one final file. (https://github.com/mariocasciaro/gulp-concat-css)
-	- use gulp-if and/or use the NODE_ENV to build based on production & dev enviroment
 	- minify the JSON file with gulp jsonminify
+
 
 * use CSS grid vs. a framework (https://css-tricks.com/snippets/css/complete-guide-grid/)
 

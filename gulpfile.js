@@ -48,15 +48,20 @@ gulp.task('jsMin', function(){
 });
 
 gulp.task('images', function() {
-  gulp.src('builds/development/images/**/*.*')
-    .pipe(gulpIf(env === 'production', imagemin({
-      progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
-      use: [pngcrush()]
-    })))
-    .pipe(gulpIf(env === 'production', gulp.dest(outputDir + 'images')))
+  return gulp.src('builds/development/images/**/*.*')
+    		.pipe(gulpIf(env === 'production', imagemin({
+      				progressive: true,
+      				svgoPlugins: [{ removeViewBox: false }],
+      				use: [pngcrush()]
+    		})))
+    		.pipe(gulpIf(env === 'production', gulp.dest(outputDir + 'images')))
 });
 
+gulp.task('html', function(){
+	return gulp.src('builds/development/index.html')
+		.pipe(gulpIf(env === "production"), gulp.dest(outputDir)); 
 
-gulp.task('default', ['sass', 'watch', 'jsMin', 'images']);
+});
+
+gulp.task('default', ['sass', 'watch', 'jsMin', 'images', 'html']);
 
